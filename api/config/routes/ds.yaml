@@ -1,0 +1,5 @@
+ds_health:
+  resource: '@DsHealthBundle/Resources/config/routing.yaml'
+
+ds_statistic:
+  resource: '@DsStatisticBundle/Resources/config/routing.yaml'
