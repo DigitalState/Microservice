@@ -1,8 +1,8 @@
 {
-    "name": "digitalstate/assets",
+    "name": "digitalstate/microservice",
     "license": "MIT",
     "type": "project",
-    "description": "The DigitalState Assets Api",
+    "description": "The DigitalState Abstract Microservice",
     "homepage": "https://digitalstate.ca",
     "minimum-stability": "dev",
     "prefer-stable" : true,
