@@ -11,6 +11,7 @@ return [
     Ds\Component\Log\DsLogBundle::class => ['all' => true],
     Ds\Component\Resolver\DsResolverBundle::class => ['all' => true],
     Ds\Component\Statistic\DsStatisticBundle::class => ['all' => true],
+    Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
     Nelmio\CorsBundle\NelmioCorsBundle::class => ['all' => true],
     Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
     Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
