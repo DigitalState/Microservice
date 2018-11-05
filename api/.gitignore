@@ -7,6 +7,11 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
+###> lexik/jwt-authentication-bundle ###
+/config/jwt/key
+/config/jwt/key.pub
+###< lexik/jwt-authentication-bundle ###
+
 /helm/api/charts
 
 ###> friendsofphp/php-cs-fixer ###
