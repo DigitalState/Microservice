@@ -7,11 +7,12 @@ security:
       pattern: ^/(_(profiler|wdt)|css|images|js)/
       security: false
     api:
-      pattern:   ^/
-      stateless: true
-      guard:
-        authenticators:
-          - lexik_jwt_authentication.jwt_token_authenticator
-
-  access_control:
-    - { path: ^/, roles: IS_AUTHENTICATED_FULLY }
+      anonymous: ~
+#      pattern: ^/
+#      stateless: true
+#      guard:
+#        authenticators:
+#          - lexik_jwt_authentication.jwt_token_authenticator
+#
+#  access_control:
+#    - { path: ^/, roles: IS_AUTHENTICATED_FULLY }

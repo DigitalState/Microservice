@@ -6,6 +6,7 @@ return [
     Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle::class => ['all' => true],
     Ds\Component\Container\DsContainerBundle::class => ['all' => true],
     Ds\Component\Debug\DsDebugBundle::class => ['dev' => true],
+    Ds\Component\Discovery\DsDiscoveryBundle::class => ['all' => true],
     Ds\Component\Entity\DsEntityBundle::class => ['all' => true],
     Ds\Component\Health\DsHealthBundle::class => ['all' => true],
     Ds\Component\Log\DsLogBundle::class => ['all' => true],
