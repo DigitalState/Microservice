@@ -53,6 +53,9 @@
     "container-interop/container-interop": {
         "version": "1.2.0"
     },
+    "defuse/php-encryption": {
+        "version": "v2.2.1"
+    },
     "digitalstate/core": {
         "version": "dev-feature/apip-2-3-3-upgrade"
     },
