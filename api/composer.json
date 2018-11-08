@@ -31,6 +31,7 @@
         "behat/mink-extension": "^2.3",
         "behat/symfony2-extension": "^2.1",
         "behatch/contexts": "^3.2",
+        "doctrine/doctrine-fixtures-bundle": "^3.0",
         "symfony/profiler-pack": "^1.0"
     },
     "config": {

@@ -8,9 +8,12 @@ services:
     public: false
 
   App\:
-    resource: ../src/*
-    exclude: ../src/{Entity,Migrations,Tests}
+    resource: ../src/{Fixtures}
 
   App\Controller\:
     resource: ../src/Controller
     tags: [controller.service_arguments]
+
+  App\Fixtures\:
+    resource: ../src/Fixtures
+    tags: [doctrine.fixture.orm]
