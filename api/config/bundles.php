@@ -13,6 +13,7 @@ return [
     Ds\Component\Entity\DsEntityBundle::class => ['all' => true],
     Ds\Component\Exception\DsExceptionBundle::class => ['all' => true],
     Ds\Component\Health\DsHealthBundle::class => ['all' => true],
+    Ds\Component\Locale\DsLocaleBundle::class => ['all' => true],
     Ds\Component\Log\DsLogBundle::class => ['all' => true],
     Ds\Component\Parameter\DsParameterBundle::class => ['all' => true],
     Ds\Component\Resolver\DsResolverBundle::class => ['all' => true],
