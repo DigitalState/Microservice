@@ -16,6 +16,7 @@ return [
     Ds\Component\Parameter\DsParameterBundle::class => ['all' => true],
     Ds\Component\Resolver\DsResolverBundle::class => ['all' => true],
     Ds\Component\Statistic\DsStatisticBundle::class => ['all' => true],
+    Ds\Component\Translation\DsTranslationBundle::class => ['all' => true],
     Knp\DoctrineBehaviors\Bundle\DoctrineBehaviorsBundle::class => ['all' => true],
     Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
     Nelmio\CorsBundle\NelmioCorsBundle::class => ['all' => true],
