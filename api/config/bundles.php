@@ -22,6 +22,7 @@ return [
     Ds\Component\Resolver\DsResolverBundle::class => ['all' => true],
     Ds\Component\Security\DsSecurityBundle::class => ['all' => true],
     Ds\Component\Statistic\DsStatisticBundle::class => ['all' => true],
+    Ds\Component\System\DsSystemBundle::class => ['all' => true],
     Ds\Component\Translation\DsTranslationBundle::class => ['all' => true],
     Knp\DoctrineBehaviors\Bundle\DoctrineBehaviorsBundle::class => ['all' => true],
     Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
