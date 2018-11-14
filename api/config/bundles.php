@@ -18,6 +18,7 @@ return [
     Ds\Component\Exception\DsExceptionBundle::class => ['all' => true],
     Ds\Component\Form\DsFormBundle::class => ['all' => true],
     Ds\Component\Health\DsHealthBundle::class => ['all' => true],
+    Ds\Component\Identity\DsIdentityBundle::class => ['all' => true],
     Ds\Component\Locale\DsLocaleBundle::class => ['all' => true],
     Ds\Component\Log\DsLogBundle::class => ['all' => true],
     Ds\Component\Metadata\DsMetadataBundle::class => ['all' => true],
