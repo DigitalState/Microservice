@@ -1,11 +1,13 @@
 security:
-  providers:
-    in_memory:
-      memory: ~
   firewalls:
     dev:
       pattern: ^/(_(profiler|wdt)|css|images|js)/
       security: false
+    system:
+      pattern: ^/system/
+      stateless: true
+      provider: ds_system
+      http_basic: ~
     api:
       anonymous: ~
 #      pattern: ^/
@@ -13,6 +15,7 @@ security:
 #      guard:
 #        authenticators:
 #          - lexik_jwt_authentication.jwt_token_authenticator
-#
-#  access_control:
+
+  access_control:
+    - { path: ^/system/, role: ROLE_SYSTEM }
 #    - { path: ^/, roles: IS_AUTHENTICATED_FULLY }
