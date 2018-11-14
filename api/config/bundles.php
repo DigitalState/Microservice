@@ -8,6 +8,7 @@ return [
     Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
     Ds\Component\Acl\DsAclBundle::class => ['all' => true],
     Ds\Component\Api\DsApiBundle::class => ['all' => true],
+    Ds\Component\Bpm\DsBpmBundle::class => ['all' => true],
     Ds\Component\Container\DsContainerBundle::class => ['all' => true],
     Ds\Component\Config\DsConfigBundle::class => ['all' => true],
     Ds\Component\Debug\DsDebugBundle::class => ['dev' => true],
