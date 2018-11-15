@@ -1,14 +1,19 @@
 version: '3.4'
 
 services:
-  db:
+  database_ui:
+    image: adminer:4-standalone
+    ports:
+      - "5433:8080"
+
+  database:
     image: postgres:9.6-alpine
     environment:
-      - POSTGRES_DB=api
-      - POSTGRES_USER=api-platform
-      - POSTGRES_PASSWORD=!ChangeMe!
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
     volumes:
-      - db-data:/var/lib/postgresql/data:rw
+      - database_data:/var/lib/postgresql/data:rw
     ports:
       - "5432:5432"
 
@@ -20,9 +25,8 @@ services:
       cache_from:
         - ${CONTAINER_REGISTRY_BASE}/php
         - ${CONTAINER_REGISTRY_BASE}/nginx
-        - ${CONTAINER_REGISTRY_BASE}/varnish
     depends_on:
-      - db
+      - database
     env_file:
       - ./api/.env
     # Comment out these volumes in production
@@ -37,7 +41,6 @@ services:
       cache_from:
         - ${CONTAINER_REGISTRY_BASE}/php
         - ${CONTAINER_REGISTRY_BASE}/nginx
-        - ${CONTAINER_REGISTRY_BASE}/varnish
     depends_on:
       - php
     # Comment out this volume in production
@@ -46,66 +49,5 @@ services:
     ports:
       - "8080:80"
 
-  cache-proxy:
-    image: ${CONTAINER_REGISTRY_BASE}/varnish
-    build:
-      context: ./api
-      target: api_platform_varnish
-      cache_from:
-        - ${CONTAINER_REGISTRY_BASE}/php
-        - ${CONTAINER_REGISTRY_BASE}/nginx
-        - ${CONTAINER_REGISTRY_BASE}/varnish
-    depends_on:
-      - api
-    volumes:
-      - ./api/docker/varnish/conf:/usr/local/etc/varnish:ro
-    tmpfs:
-      - /usr/local/var/varnish:exec
-    ports:
-      - "8081:80"
-
-  client:
-    image: ${CONTAINER_REGISTRY_BASE}/client
-    build:
-      context: ./client
-      cache_from:
-        - ${CONTAINER_REGISTRY_BASE}/client
-    env_file:
-      - ./client/.env
-    volumes:
-      - ./client:/usr/src/client:rw,cached
-      - /usr/src/client/node_modules
-    ports:
-      - "80:3000"
-
-  admin:
-    image: ${CONTAINER_REGISTRY_BASE}/admin
-    build:
-      context: ./admin
-      cache_from:
-        - ${CONTAINER_REGISTRY_BASE}/admin
-    env_file:
-      - ./admin/.env
-    volumes:
-      - ./admin:/usr/src/admin:rw,cached
-      - /usr/src/admin/node_modules
-    ports:
-      - "81:3000"
-
-  h2-proxy:
-    # Don't use this proxy in prod
-    build:
-      context: ./h2-proxy
-    depends_on:
-      - client
-      - admin
-      - api
-      - cache-proxy
-    ports:
-      - "443:443"
-      - "444:444"
-      - "8443:8443"
-      - "8444:8444"
-
 volumes:
-  db-data: {}
+  database_data: {}
