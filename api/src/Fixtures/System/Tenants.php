@@ -4,22 +4,22 @@ namespace App\Fixtures\System;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Ds\Component\Parameter\Fixture\Parameter;
+use Ds\Component\Tenant\Fixture\Tenant;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 /**
- * Class Parameters
+ * Class Tenants
  */
-final class Parameters implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
+final class Tenants implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
 {
-    use Parameter;
+    use Tenant;
 
     /**
      * Constructor
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{env}/system/parameters.yaml';
+        $this->path = '/srv/api/config/fixtures/{env}/system/tenants.yaml';
     }
 
     /**

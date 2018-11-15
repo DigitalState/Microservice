@@ -1,0 +1,24 @@
+objects:
+  - access: 587ceb21-d9e5-4ed9-9df8-1038406d5807 # Anonymous
+    scope: session
+    entity: ~
+    entity_uuid: ~
+    key:
+      - asset
+      - asset_uuid
+      - asset_title
+      - asset_data
+      - asset_association
+      - asset_association_uuid
+      - asset_association_entity
+      - asset_association_entity_uuid
+    attributes: [BROWSE, READ]
+
+prototype:
+  access: ~
+  scope: ~
+  entity: ~
+  entity_uuid: ~
+  key: ~
+  attributes: []
+  tenant: e5a2120d-6bf7-4c58-a900-bac1e55e986b # Tenant 1

@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Fixtures\System;
+namespace App\Fixtures;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Ds\Component\Parameter\Fixture\Parameter;
+use Ds\Component\Config\Fixture\Config;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 /**
- * Class Parameters
+ * Class Configs
  */
-final class Parameters implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
+final class Configs implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
 {
-    use Parameter;
+    use Config;
 
     /**
      * Constructor
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{env}/system/parameters.yaml';
+        $this->path = '/srv/api/config/fixtures/{env}/configs.yaml';
     }
 
     /**
@@ -27,6 +27,6 @@ final class Parameters implements FixtureInterface, OrderedFixtureInterface, Con
      */
     public function getOrder()
     {
-        return 0;
+        return 10;
     }
 }
