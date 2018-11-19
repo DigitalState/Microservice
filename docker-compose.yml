@@ -40,7 +40,7 @@ services:
     volumes:
       - ./api/public:/srv/api/public:ro
 #    ports:
-#      - "8080:80"
+#      - "80:80"
 
 volumes:
   database_data: {}
