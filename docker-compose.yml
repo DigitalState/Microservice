@@ -1,11 +1,6 @@
 version: '3.4'
 
 services:
-  database_ui:
-    image: adminer:4-standalone
-    ports:
-      - "5433:8080"
-
   database:
     image: postgres:9.6-alpine
     environment:
@@ -14,8 +9,8 @@ services:
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
     volumes:
       - database_data:/var/lib/postgresql/data:rw
-    ports:
-      - "5432:5432"
+#    ports:
+#      - "5432:5432"
 
   php:
     image: ${CONTAINER_REGISTRY_BASE}/php
@@ -29,7 +24,6 @@ services:
       - database
     env_file:
       - ./api/.env
-    # Comment out these volumes in production
     volumes:
       - ./api:/srv/api:rw,cached
 
@@ -43,11 +37,10 @@ services:
         - ${CONTAINER_REGISTRY_BASE}/nginx
     depends_on:
       - php
-    # Comment out this volume in production
     volumes:
       - ./api/public:/srv/api/public:ro
-    ports:
-      - "8080:80"
+#    ports:
+#      - "8080:80"
 
 volumes:
   database_data: {}
