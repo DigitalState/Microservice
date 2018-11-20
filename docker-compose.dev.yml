@@ -3,5 +3,5 @@ version: '3.4'
 services:
   database_ui:
     image: adminer:4-standalone
-#    ports:
-#      - "81:8080"
+    ports:
+      - "5433:8080"
