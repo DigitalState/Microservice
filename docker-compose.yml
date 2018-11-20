@@ -39,8 +39,6 @@ services:
       - php
     volumes:
       - ${DIRECTORY}/api/public:/srv/api/public:ro
-    ports:
-      - "8080:80"
 
 volumes:
   database_data: {}
