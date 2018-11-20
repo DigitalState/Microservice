@@ -11,7 +11,7 @@ services:
       - database_data:/var/lib/postgresql/data:rw
 
   php:
-    image: digitalstate/microservice/php
+    image: digitalstate/microservice-php
     build:
       context: ./api
       target: api_platform_php
@@ -23,7 +23,7 @@ services:
       DATABASE_URL: ${DATABASE_URL}
 
   api:
-    image: digitalstate/microservice/nginx
+    image: digitalstate/microservice-nginx
     build:
       context: ./api
       target: api_platform_nginx
