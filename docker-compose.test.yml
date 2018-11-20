@@ -1,10 +1,1 @@
 version: '3.4'
-
-services:
-  php:
-    volumes:
-      - ${DIRECTORY}/api:/srv/api:rw,cached
-
-  api:
-    volumes:
-      - ${DIRECTORY}/api/public:/srv/api/public:ro
