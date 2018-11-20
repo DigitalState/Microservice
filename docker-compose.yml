@@ -11,13 +11,10 @@ services:
       - database_data:/var/lib/postgresql/data:rw
 
   php:
-    image: ${CONTAINER_REGISTRY_BASE}/php
+    image: digitalstate/microservice/php
     build:
       context: ./api
       target: api_platform_php
-      cache_from:
-        - ${CONTAINER_REGISTRY_BASE}/php
-        - ${CONTAINER_REGISTRY_BASE}/nginx
     depends_on:
       - database
     env_file:
@@ -26,13 +23,10 @@ services:
       DATABASE_URL: ${DATABASE_URL}
 
   api:
-    image: ${CONTAINER_REGISTRY_BASE}/nginx
+    image: digitalstate/microservice/nginx
     build:
       context: ./api
       target: api_platform_nginx
-      cache_from:
-        - ${CONTAINER_REGISTRY_BASE}/php
-        - ${CONTAINER_REGISTRY_BASE}/nginx
     depends_on:
       - php
 
