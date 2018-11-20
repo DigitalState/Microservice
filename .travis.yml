@@ -12,8 +12,8 @@ before_install:
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
-  - openssl genrsa -out api/config/jwt -aes256 -passout pass:${JWT_PASS_PHRASE} 4096
-  - openssl rsa -pubout -in api/config/jwt -out api/config/jwt.pub -passin pass:${JWT_PASS_PHRASE}
+  - openssl genrsa -out api/config/jwt/key -aes256 -passout pass:${JWT_PASS_PHRASE} 4096
+  - openssl rsa -pubout -in api/config/jwt/key -out api/config/jwt/key.pub -passin pass:${JWT_PASS_PHRASE}
 
 script:
   - docker-compose -f docker-compose.yml -f docker-compose.test.yml build
