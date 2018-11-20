@@ -24,8 +24,6 @@ services:
       - ./api/.env
     environment:
       DATABASE_URL: ${DATABASE_URL}
-    volumes:
-      - ${DIRECTORY}/api:/srv/api:rw,cached
 
   api:
     image: ${CONTAINER_REGISTRY_BASE}/nginx
@@ -37,8 +35,6 @@ services:
         - ${CONTAINER_REGISTRY_BASE}/nginx
     depends_on:
       - php
-    volumes:
-      - ${DIRECTORY}/api/public:/srv/api/public:ro
 
 volumes:
   database_data: {}
