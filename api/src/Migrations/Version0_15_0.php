@@ -76,10 +76,10 @@ final class Version0_15_0 extends AbstractMigration implements ContainerAwareInt
     {
         $parameters = Parameters::parseFile(static::DIRECTORY.'parameters.yml');
         $this->acl->up($schema, Objects::parseFile(static::DIRECTORY.'acl.yml', $parameters));
-        $this->config->up($schema);
-        $this->metadata->up($schema);
-        $this->parameter->up($schema);
-        $this->tenant->up($schema);
+        $this->config->setContainer($this->container)->up($schema, Objects::parseFile(static::DIRECTORY.'config.yml', $parameters));
+        $this->metadata->up($schema, Objects::parseFile(static::DIRECTORY.'metadata.yml', $parameters));
+        $this->parameter->setContainer($this->container)->up($schema, Objects::parseFile(static::DIRECTORY.'parameter.yml', $parameters));
+        $this->tenant->up($schema, Objects::parseFile(static::DIRECTORY.'tenant.yml', $parameters));
 
         switch ($this->platform->getName()) {
             case 'postgresql':
@@ -99,9 +99,9 @@ final class Version0_15_0 extends AbstractMigration implements ContainerAwareInt
     public function down(Schema $schema)
     {
         $this->acl->down($schema);
-        $this->config->down($schema);
+        $this->config->setContainer($this->container)->down($schema);
         $this->metadata->down($schema);
-        $this->parameter->down($schema);
+        $this->parameter->setContainer($this->container)->down($schema);
         $this->tenant->down($schema);
 
         switch ($this->platform->getName()) {
