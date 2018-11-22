@@ -11,7 +11,7 @@ return [
     Ds\Component\Bpm\DsBpmBundle::class => ['all' => true],
     Ds\Component\Container\DsContainerBundle::class => ['all' => true],
     Ds\Component\Config\DsConfigBundle::class => ['all' => true],
-    Ds\Component\Debug\DsDebugBundle::class => ['dev' => true],
+    Ds\Component\Debug\DsDebugBundle::class => ['dev' => true, 'test' => true],
     Ds\Component\Discovery\DsDiscoveryBundle::class => ['all' => true],
     Ds\Component\Encryption\DsEncryptionBundle::class => ['all' => true],
     Ds\Component\Entity\DsEntityBundle::class => ['all' => true],
