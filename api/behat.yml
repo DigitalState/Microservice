@@ -7,6 +7,10 @@ default:
         - Behat\MinkExtension\Context\MinkContext
         - behatch:context:json
         - behatch:context:rest
+        - Ds\Component\Database\Test\Context\SchemaContext:
+            doctrine: '@doctrine'
+        - Ds\Component\Database\Test\Context\MigrationContext
+        - Ds\Component\Database\Test\Context\FixtureContext
 
   extensions:
     Behat\Symfony2Extension:
