@@ -27,6 +27,7 @@ return [
     Ds\Component\Security\DsSecurityBundle::class => ['all' => true],
     Ds\Component\Statistic\DsStatisticBundle::class => ['all' => true],
     Ds\Component\System\DsSystemBundle::class => ['all' => true],
+    Ds\Component\System\Test\DsSystemTestBundle::class => ['test' => true],
     Ds\Component\Tenant\DsTenantBundle::class => ['all' => true],
     Ds\Component\Translation\DsTranslationBundle::class => ['all' => true],
     Knp\DoctrineBehaviors\Bundle\DoctrineBehaviorsBundle::class => ['all' => true],
