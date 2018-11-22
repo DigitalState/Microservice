@@ -10,6 +10,8 @@ default:
             doctrine: '@doctrine'
         - Ds\Component\Database\Test\Context\MigrationContext
         - Ds\Component\Database\Test\Context\FixtureContext
+        - Ds\Component\System\Test\Context\SystemContext:
+            userCollection: '@Ds\Component\System\Test\Collection\UserCollection'
 
   extensions:
     Behat\Symfony2Extension:
