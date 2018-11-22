@@ -1,24 +1,24 @@
 objects:
-  - access: 9b5e8f50-f153-4b00-b0a9-d9f24c09e0af # Administrator
+  - access: 3bb105c5-9ce8-4be7-a194-7515c8beb7fa # Administrator
     scope: owner
     entity: BusinessUnit
     entity_uuid: ~ # Any BusinessUnit
     key: entity
     attributes: [BROWSE, READ, EDIT, ADD, DELETE]
 
-  - access: 9b5e8f50-f153-4b00-b0a9-d9f24c09e0af # Administrator
+  - access: 3bb105c5-9ce8-4be7-a194-7515c8beb7fa # Administrator
     scope: owner
     entity: BusinessUnit
     entity_uuid: ~ # Any BusinessUnit
     key: property
     attributes: [BROWSE, READ, EDIT]
 
-  - access: 9b5e8f50-f153-4b00-b0a9-d9f24c09e0af # Administrator
+  - access: 3bb105c5-9ce8-4be7-a194-7515c8beb7fa # Administrator
     scope: generic
     key: generic
     attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
 
-  - access: a55f245e-e2b6-4bd4-baf8-38232d2ce977 # Manager
+  - access: 04d10a6b-0354-4271-b65c-aa0de8496513 # Manager
     scope: owner
     entity: BusinessUnit
     entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
@@ -28,7 +28,7 @@ objects:
       - metadata
     attributes: [EDIT, ADD, DELETE]
 
-  - access: a55f245e-e2b6-4bd4-baf8-38232d2ce977 # Manager
+  - access: 04d10a6b-0354-4271-b65c-aa0de8496513 # Manager
     scope: owner
     entity: BusinessUnit
     entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
@@ -38,7 +38,7 @@ objects:
       - metadata_property
     attributes: [EDIT]
 
-  - access: 569cca0e-cda0-40e3-abf2-fee5d5e6413a # Staff
+  - access: 799eb71d-d9d0-4d05-933e-d32b25e7ef47 # Staff
     scope: owner
     entity: BusinessUnit
     entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
@@ -51,7 +51,7 @@ objects:
       - metadata_property
     attributes: [BROWSE, READ]
 
-  - access: a66549dd-9fa7-491c-8044-06aef2c51e75 # Individual
+  - access: 759cfb30-3a0b-47ca-bd04-2e053a786a12 # Individual
     scope: session
     entity: ~
     entity_uuid: ~
@@ -66,7 +66,7 @@ objects:
       - asset_association_entity_uuid
     attributes: [BROWSE, READ]
 
-  - access: 74cc57ed-8b17-4ff3-bb64-33911538dd62 # Organization
+  - access: 881df54d-fc9f-4bae-8ce2-c8d91aad3cdc # Organization
     scope: session
     entity: ~
     entity_uuid: ~
