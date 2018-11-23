@@ -2,8 +2,7 @@ default:
   suites:
     default:
       contexts:
-        - FeatureContext:
-            kernel: '@kernel'
+        - FeatureContext
         - Behat\MinkExtension\Context\MinkContext
         - behatch:context:json
         - behatch:context:rest
