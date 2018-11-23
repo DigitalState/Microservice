@@ -26,6 +26,7 @@ return [
     Ds\Component\Parameter\DsParameterBundle::class => ['all' => true],
     Ds\Component\Resolver\DsResolverBundle::class => ['all' => true],
     Ds\Component\Security\DsSecurityBundle::class => ['all' => true],
+    Ds\Component\Security\Test\DsSecurityTestBundle::class => ['test' => true],
     Ds\Component\Statistic\DsStatisticBundle::class => ['all' => true],
     Ds\Component\System\DsSystemBundle::class => ['all' => true],
     Ds\Component\System\Test\DsSystemTestBundle::class => ['test' => true],
