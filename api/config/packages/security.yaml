@@ -9,12 +9,12 @@ security:
       provider: ds_system
       http_basic: ~
     api:
-      anonymous: ~
-#      pattern: ^/
-#      stateless: true
-#      guard:
-#        authenticators:
-#          - lexik_jwt_authentication.jwt_token_authenticator
+      pattern: ^/
+      stateless: true
+      provider: ds_security
+      guard:
+        authenticators:
+          - lexik_jwt_authentication.jwt_token_authenticator
 
   access_control:
     - { path: ^/system/, role: ROLE_SYSTEM }
