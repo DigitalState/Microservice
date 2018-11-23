@@ -4,8 +4,8 @@ Feature: Browse configs
   As a system identity
   I should be able to send api requests related to configs
 
-#  Background:
-#    Given I am authenticated as the "System" identity from the tenant "b6ac25fe-3cd6-4100-a054-6bba2fc9ef18"
+  Background:
+    Given I am authenticated as the "System" user from the tenant "b6ac25fe-3cd6-4100-a054-6bba2fc9ef18"
 
   @upMigrations @loadFixtures @downMigrations
   Scenario: Browse all configs
