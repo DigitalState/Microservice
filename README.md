@@ -20,10 +20,10 @@ Further documentation can be found in the [Documentation Repository](https://git
 
 ## References
 
-- [Api](references/api.md)
-- [Configurations](references/configurations.md)
-- [Permissions](references/permissions.md)
-- [Docker](references/docker.md)
+- [Api](reference/api.md)
+- [Configurations](reference/configurations.md)
+- [Permissions](reference/permissions.md)
+- [Docker](reference/docker.md)
 
 ## Contributing
 
