@@ -5,5 +5,3 @@ services:
     image: rodolpheche/wiremock:2.19.0-alpine
     volumes:
       - ${DIRECTORY}/mock/discovery:/home/wiremock:rw
-    ports:
-      - 89:8080
