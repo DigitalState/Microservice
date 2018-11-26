@@ -21,10 +21,22 @@ _Note: The majority of variables found in the list below are used to override im
 | `COMPOSE_CONVERT_WINDOWS_PATHS` | The docker-compose windows path compatibility config. | `true` |
 | `COMPOSE_PROJECT_NAME` | The docker-compose project name. This is used to properly namespace docker containers in the event where you are running multiple instances. | `ds_microservice` |
 | `DIRECTORY` | The base directory the docker-compose files are located. This is used to properly configure the base directory for DockerForWindows and DockerForMac based machines. | `.` |
-| `DATABASE_NAME` | The database name. | `api` |
-| `DATABASE_USER` | The database user. | `api` |
-| `DATABASE_PASSWORD` | The database password. | `!ChangeMe!` |
-| `DATABASE_URL` | The database connection string used by the api image. | `postgres://api:!ChangeMe!@database/api` |
+| `DATABASE_NAME` | See [POSTGRES_DB](#database_image). | `api` |
+| `DATABASE_USER` | See [POSTGRES_USER](#database_image). | `api` |
+| `DATABASE_PASSWORD` | See [POSTGRES_PASSWORD](#database_image). | `!ChangeMe!` |
+| `API_NAME` | See [APP](#api_image). | `microservice` |
+| `API_ENV` | See [APP_ENV](#api_image). | `dev` |
+| `API_SECRET` | See [APP_SECRET](#api_image). | `!ChangeMe!` |
+| `API_NAMESPACE` | See [APP_NAMESPACE](#api_image). | `ds` |
+| `API_TRUSTED_PROXIES` | See [TRUSTED_PROXIES](#api_image). | `10.0.0.0/8,172.16.0.0/12,192.168.0.0/16` |
+| `API_TRUSTED_HOSTS` | See [TRUSTED_HOSTS](#api_image). | `localhost,api` |
+| `API_DATABASE_URL` | See [DATABASE_URL](#api_image). | `postgres://api:!ChangeMe!@database/api` |
+| `API_CORS_ALLOW_ORIGIN` | See [CORS_ALLOW_ORIGIN](#api_image). | `^https?://localhost(:[0-9]+)?$` |
+| `API_DISCOVERY_HOST` | See [DISCOVERY_HOST](#api_image). | `127.0.0.1:8500` |
+| `API_DISCOVERY_CREDENTIAL` | See [DISCOVERY_CREDENTIAL](#api_image). | `!ChangeMe!` |
+| `API_ENCRYPTION` | See [ENCRYPTION](#api_image). | `!ChangeMe!` |
+| `API_SYSTEM_USERNAME` | See [SYSTEM_USERNAME](#api_image). | `!ChangeMe!` |
+| `API_SYSTEM_PASSWORD` | See [SYSTEM_PASSWORD](#api_image). | `!ChangeMe!` |
 
 ### Database Image
 
