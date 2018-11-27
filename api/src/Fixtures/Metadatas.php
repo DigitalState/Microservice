@@ -19,7 +19,7 @@ final class Metadatas implements FixtureInterface, OrderedFixtureInterface, Cont
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{env}/metadatas.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/metadatas.yaml';
     }
 
     /**

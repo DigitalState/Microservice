@@ -19,7 +19,7 @@ final class Configs implements FixtureInterface, OrderedFixtureInterface, Contai
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{env}/configs.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/configs.yaml';
     }
 
     /**
