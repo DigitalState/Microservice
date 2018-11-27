@@ -79,5 +79,5 @@ _Note: The majority of variables found in the list below are used to override im
 
 | Path | Description |
 | :--- | :---------- |
-| `` | The jwt private key. |
-| `` | The jwt public key. |
+| `/srv/api/config/jwt/key` | The jwt private key. |
+| `/srv/api/config/jwt/key.pub` | The jwt public key. |
