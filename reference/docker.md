@@ -4,13 +4,12 @@ The DigitalState Abstract Microservice docker information.
 
 ## Table of Contents
 
-- [Environment Variables](#environment-variables)
+- [Docker Compose](#docker-compose)
+- [Images](#images)
 
-## Environment Variables
+## Docker Compose
 
-The following section describes the complete list of environment variables for the docker-compose file and each container images.
-
-### Docker Compose
+### Environment variables
 
 The environment variables used by the docker-compose files.
 
@@ -38,7 +37,11 @@ _Note: The majority of variables found in the list below are used to override im
 | `API_SYSTEM_USERNAME` | See [SYSTEM_USERNAME](#api_image). | `!ChangeMe!` |
 | `API_SYSTEM_PASSWORD` | See [SYSTEM_PASSWORD](#api_image). | `!ChangeMe!` |
 
-### Database Image
+## Images
+
+### Database
+
+#### Environment Variables
 
 | Name | Description | Default |
 | :--- | :---------- | :------ |
@@ -46,7 +49,15 @@ _Note: The majority of variables found in the list below are used to override im
 | `POSTGRES_USER` | The database user. | `api` |
 | `POSTGRES_PASSWORD` | The database password. | `!ChangeMe!` |
 
-### Api Image
+#### Volumes
+
+| Path | Description |
+| :--- | :---------- |
+| `/var/lib/postgresql/data` | The database data directory. |
+
+### Api
+
+#### Environment Variables
 
 | Name | Description | Default |
 | :--- | :---------- | :------ |
@@ -63,3 +74,10 @@ _Note: The majority of variables found in the list below are used to override im
 | `ENCRYPTION` | The secret encryption key. | `!ChangeMe!` |
 | `SYSTEM_USERNAME` | The system username. | `!ChangeMe!` |
 | `SYSTEM_PASSWORD` | The system password. | `!ChangeMe!` |
+
+#### Volumes
+
+| Path | Description |
+| :--- | :---------- |
+| `` | The jwt private key. |
+| `` | The jwt public key. |
