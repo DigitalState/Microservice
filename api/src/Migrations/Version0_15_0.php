@@ -25,7 +25,7 @@ final class Version0_15_0 extends AbstractMigration implements ContainerAwareInt
     /**
      * @cont string
      */
-    const DIRECTORY = '/srv/api/config/migrations/0_15_0/';
+    const DIRECTORY = '/srv/api/config/migrations';
 
     /**
      * @var \Ds\Component\Acl\Migrations\Version0_15_0
@@ -74,12 +74,12 @@ final class Version0_15_0 extends AbstractMigration implements ContainerAwareInt
      */
     public function up(Schema $schema)
     {
-        $parameters = Parameters::parseFile(static::DIRECTORY.'parameters.yml');
-        $this->acl->up($schema, Objects::parseFile(static::DIRECTORY.'acl.yml', $parameters));
-        $this->config->setContainer($this->container)->up($schema, Objects::parseFile(static::DIRECTORY.'config.yml', $parameters));
-        $this->metadata->up($schema, Objects::parseFile(static::DIRECTORY.'metadata.yml', $parameters));
-        $this->parameter->setContainer($this->container)->up($schema, Objects::parseFile(static::DIRECTORY.'parameter.yml', $parameters));
-        $this->tenant->up($schema, Objects::parseFile(static::DIRECTORY.'tenant.yml', $parameters));
+        $parameters = Parameters::parseFile(static::DIRECTORY.'/parameters.yaml');
+        $this->acl->up($schema, Objects::parseFile(static::DIRECTORY.'/0_15_0/acl.yaml', $parameters));
+        $this->config->setContainer($this->container)->up($schema, Objects::parseFile(static::DIRECTORY.'/0_15_0/config.yaml', $parameters));
+        $this->metadata->up($schema, Objects::parseFile(static::DIRECTORY.'/0_15_0/metadata.yaml', $parameters));
+        $this->parameter->setContainer($this->container)->up($schema, Objects::parseFile(static::DIRECTORY.'/0_15_0/parameter.yaml', $parameters));
+        $this->tenant->up($schema, Objects::parseFile(static::DIRECTORY.'/0_15_0/tenant.yaml', $parameters));
 
         switch ($this->platform->getName()) {
             case 'postgresql':
