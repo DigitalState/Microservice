@@ -81,3 +81,5 @@ _Note: The majority of variables found in the list below are used to override im
 | :--- | :---------- |
 | `/srv/api/config/jwt/key` | The jwt private key. |
 | `/srv/api/config/jwt/key.pub` | The jwt public key. |
+| `/srv/api/var/logs` | The logs directory. |
+| `/srv/api/var/cache` | The cache directory. |
