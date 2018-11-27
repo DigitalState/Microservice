@@ -45,9 +45,9 @@ _Note: The majority of variables found in the list below are used to override im
 
 | Name | Description | Default |
 | :--- | :---------- | :------ |
-| `POSTGRES_DB` | The database name. | `api` |
-| `POSTGRES_USER` | The database user. | `api` |
-| `POSTGRES_PASSWORD` | The database password. | `!ChangeMe!` |
+| `POSTGRES_DB` | The name of the database to be created by default. | `api` |
+| `POSTGRES_USER` | The user to be created by default. | `api` |
+| `POSTGRES_PASSWORD` | The password for the default user. | `!ChangeMe!` |
 
 #### Volumes
 
