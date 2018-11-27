@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  php:
+    volumes:
+      - /root/jwt/key:/srv/api/config/jwt/key:rw
+      - /root/jwt/key.pub:/srv/api/config/jwt/key.pub:rw
