@@ -12,6 +12,7 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
   - export API_JWT_PASS_PHRASE=$(date +%s | sha256sum | base64 | head -c 32)
+  - export API_SYSTEM_PASSWORD=$2a$04$YLsQ4y3k2IrzmXni/0z2tOhzXk7y64nDSaCECEkQIyTCZeyZ4xNmu
   - openssl genrsa -out api/config/jwt/key -aes256 -passout pass:${API_JWT_PASS_PHRASE} 4096
   - openssl rsa -pubout -in api/config/jwt/key -out api/config/jwt/key.pub -passin pass:${API_JWT_PASS_PHRASE}
 
