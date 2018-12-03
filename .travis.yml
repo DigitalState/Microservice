@@ -17,6 +17,6 @@ before_install:
 
 script:
   - docker-compose -f docker-compose.yml -f docker-compose.test.yml build
-  - docker-compose -f docker-compose.yml -f docker-compose.test.yml run php composer install --prefer-dist --no-progress --no-suggest --no-interaction
-  - docker-compose -f docker-compose.yml -f docker-compose.test.yml run php php bin/console security:check
-  - docker-compose -f docker-compose.yml -f docker-compose.test.yml run php vendor/bin/behat
+  - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm php composer install --prefer-dist --no-progress --no-suggest --no-interaction
+  - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm php php bin/console security:check
+  - docker-compose -f docker-compose.yml -f docker-compose.test.yml run --rm php vendor/bin/behat
