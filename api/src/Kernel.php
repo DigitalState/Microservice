@@ -42,7 +42,7 @@ class Kernel extends BaseKernel
      * {@inheritdoc}
      */
     public function registerBundles()
-    {
+    {var_dump($this->environment);exit;
         $contents = require $this->getProjectDir().'/config/bundles.php';
 
         foreach ($contents as $class => $envs) {
