@@ -1,5 +1,5 @@
 <?php
-
+var_dump($_ENV['SYSTEM_PASSWORD']);exit;
 use App\Kernel;
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\Dotenv\Dotenv;
