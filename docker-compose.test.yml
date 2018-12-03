@@ -1,6 +1,10 @@
 version: '3.4'
 
 services:
+  php:
+    environment:
+      APP_ENV: test
+
   mock_discovery:
     image: rodolpheche/wiremock:2.19.0-alpine
     volumes:

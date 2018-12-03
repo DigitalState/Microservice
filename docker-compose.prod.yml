@@ -2,6 +2,8 @@ version: '3.4'
 
 services:
   php:
+    environment:
+      APP_ENV: prod
     volumes:
       - ${DIRECTORY}/api/config/jwt/key:/srv/api/config/jwt/key:rw
       - ${DIRECTORY}/api/config/jwt/key.pub:/srv/api/config/jwt/key.pub:rw

@@ -9,6 +9,8 @@ services:
           - microservice_database_ui
 
   php:
+    environment:
+      APP_ENV: dev
     volumes:
       - ${DIRECTORY}/api:/srv/api:rw,cached
 
