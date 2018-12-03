@@ -9,6 +9,10 @@ services:
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
     volumes:
       - database_data:/var/lib/postgresql/data:rw
+    networks:
+      default:
+        aliases:
+          - microservice_database
 
   php:
     image: digitalstate/microservice-php
@@ -33,6 +37,10 @@ services:
       ENCRYPTION: ${API_ENCRYPTION}
       SYSTEM_USERNAME: ${API_SYSTEM_USERNAME}
       SYSTEM_PASSWORD: ${API_SYSTEM_PASSWORD}
+    networks:
+      default:
+        aliases:
+          - microservice_php
 
   api:
     image: digitalstate/microservice-nginx
@@ -41,6 +49,10 @@ services:
       target: api_platform_nginx
     depends_on:
       - php
+    networks:
+      default:
+        aliases:
+          - microservice_api
 
 volumes:
   database_data: {}

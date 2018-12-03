@@ -5,3 +5,7 @@ services:
     image: rodolpheche/wiremock:2.19.0-alpine
     volumes:
       - ${DIRECTORY}/mock/discovery:/home/wiremock:rw
+    networks:
+      default:
+        aliases:
+          - microservice_mock_discovery
