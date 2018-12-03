@@ -4,6 +4,8 @@ services:
   php:
     environment:
       APP_ENV: test
+    volumes:
+      - ${DIRECTORY}/api:/srv/api:rw,cached
 
   mock_discovery:
     image: rodolpheche/wiremock:2.19.0-alpine
