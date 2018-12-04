@@ -44,7 +44,7 @@ services:
           - microservice_php
 
   api:
-    image: digitalstate/microservice-nginx
+    image: digitalstate/microservice-api
     build:
       context: ./api
       target: api_platform_nginx
