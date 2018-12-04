@@ -1,6 +1,6 @@
 # Docker
 
-The DigitalState Abstract Microservice docker information.
+The DigitalState Abstract microservice docker information.
 
 ## Table of Contents
 

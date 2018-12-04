@@ -1,6 +1,6 @@
 # Configurations
 
-The DigitalState Assets microservice configurations registry.
+The DigitalState Abstract microservice configurations registry.
 
 ## Table of Contents
 
