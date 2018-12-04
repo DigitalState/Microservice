@@ -18,69 +18,6 @@ objects:
     key: generic
     attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
 
-  - access: 04d10a6b-0354-4271-b65c-aa0de8496513 # Manager
-    scope: owner
-    entity: BusinessUnit
-    entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
-    key:
-      - asset
-      - asset_association
-      - metadata
-    attributes: [EDIT, ADD, DELETE]
-
-  - access: 04d10a6b-0354-4271-b65c-aa0de8496513 # Manager
-    scope: owner
-    entity: BusinessUnit
-    entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
-    key:
-      - asset_property
-      - asset_association_property
-      - metadata_property
-    attributes: [EDIT]
-
-  - access: 799eb71d-d9d0-4d05-933e-d32b25e7ef47 # Staff
-    scope: owner
-    entity: BusinessUnit
-    entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
-    key:
-      - asset
-      - asset_property
-      - asset_association
-      - asset_association_property
-      - metadata
-      - metadata_property
-    attributes: [BROWSE, READ]
-
-  - access: 759cfb30-3a0b-47ca-bd04-2e053a786a12 # Individual
-    scope: session
-    entity: ~
-    entity_uuid: ~
-    key:
-      - asset
-      - asset_uuid
-      - asset_title
-      - asset_data
-      - asset_association
-      - asset_association_uuid
-      - asset_association_entity
-      - asset_association_entity_uuid
-    attributes: [BROWSE, READ]
-
-  - access: 881df54d-fc9f-4bae-8ce2-c8d91aad3cdc # Organization
-    scope: session
-    entity: ~
-    entity_uuid: ~
-    key:
-      - asset
-      - asset_uuid
-      - asset_title
-      - asset_data
-      - asset_association
-      - asset_association_uuid
-      - asset_association_entity
-      - asset_association_entity_uuid
-    attributes: [BROWSE, READ]
-
 prototype:
   access: ~
   scope: ~

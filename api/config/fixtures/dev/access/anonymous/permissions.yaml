@@ -1,18 +1,4 @@
-objects:
-  - access: 1760a927-4292-4ad7-a6a1-ef043ff5bfa6 # Anonymous
-    scope: session
-    entity: ~
-    entity_uuid: ~
-    key:
-      - asset
-      - asset_uuid
-      - asset_title
-      - asset_data
-      - asset_association
-      - asset_association_uuid
-      - asset_association_entity
-      - asset_association_entity_uuid
-    attributes: [BROWSE, READ]
+objects: []
 
 prototype:
   access: ~

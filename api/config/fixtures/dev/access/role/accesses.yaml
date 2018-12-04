@@ -2,18 +2,6 @@ objects:
   - uuid: 3bb105c5-9ce8-4be7-a194-7515c8beb7fa
     assignee_uuid: 5ab54dd5-56ed-4e96-bd8b-1d60ab668a75 # Administrator
 
-  - uuid: 04d10a6b-0354-4271-b65c-aa0de8496513
-    assignee_uuid: f06dd49d-8ad4-437a-beee-387b834ee217 # Manager
-
-  - uuid: 799eb71d-d9d0-4d05-933e-d32b25e7ef47
-    assignee_uuid: 3e64bbd1-4d00-47e7-a35e-92691f5a6018 # Staff
-
-  - uuid: 759cfb30-3a0b-47ca-bd04-2e053a786a12
-    assignee_uuid: 54d82fc6-8ce7-498e-832f-3598664a9d9d # Individual
-
-  - uuid: 881df54d-fc9f-4bae-8ce2-c8d91aad3cdc
-    assignee_uuid: 777b96e7-e183-44f7-b7e4-dc0cb7591f74 # Organization
-
 prototype:
   uuid: ~
   owner: BusinessUnit
