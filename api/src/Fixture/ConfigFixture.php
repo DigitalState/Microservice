@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Fixtures;
+namespace App\Fixture;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Ds\Component\Acl\Fixture\Access;
+use Ds\Component\Config\Fixture\Config;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 /**
- * Class Accesses
+ * Class ConfigFixture
  */
-final class Accesses implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
+final class ConfigFixture implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
 {
-    use Access;
+    use Config;
 
     /**
      * Constructor
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/access/*/accesses.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/configs.yaml';
     }
 
     /**

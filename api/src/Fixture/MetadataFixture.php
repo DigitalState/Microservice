@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Fixtures;
+namespace App\Fixture;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Ds\Component\Acl\Fixture\Permission;
+use Ds\Component\Metadata\Fixture\Metadata;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 /**
- * Class Permissions
+ * Class MetadataFixture
  */
-final class Permissions implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
+final class MetadataFixture implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
 {
-    use Permission;
+    use Metadata;
 
     /**
      * Constructor
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/access/*/permissions.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/metadatas.yaml';
     }
 
     /**
@@ -27,6 +27,6 @@ final class Permissions implements FixtureInterface, OrderedFixtureInterface, Co
      */
     public function getOrder()
     {
-        return 11;
+        return 10;
     }
 }

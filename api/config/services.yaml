@@ -8,12 +8,12 @@ services:
     public: false
 
   App\:
-    resource: ../src/{Fixtures}
+    resource: ../src/{Fixture}
 
   App\Controller\:
     resource: ../src/Controller
     tags: [controller.service_arguments]
 
-  App\Fixtures\:
-    resource: ../src/Fixtures
+  App\Fixture\:
+    resource: ../src/Fixture
     tags: [doctrine.fixture.orm]

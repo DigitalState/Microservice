@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Fixtures\System;
+namespace App\Fixture;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Ds\Component\Tenant\Fixture\Tenant;
+use Ds\Component\Acl\Fixture\Permission;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 /**
- * Class Tenants
+ * Class PermissionFixture
  */
-final class Tenants implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
+final class PermissionFixture implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
 {
-    use Tenant;
+    use Permission;
 
     /**
      * Constructor
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/system/tenants.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/access/*/permissions.yaml';
     }
 
     /**
@@ -27,6 +27,6 @@ final class Tenants implements FixtureInterface, OrderedFixtureInterface, Contai
      */
     public function getOrder()
     {
-        return 0;
+        return 11;
     }
 }
