@@ -19,7 +19,7 @@ final class ParameterFixture implements FixtureInterface, OrderedFixtureInterfac
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/system/parameters.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/system/parameter.yaml';
     }
 
     /**

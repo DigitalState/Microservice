@@ -19,7 +19,7 @@ final class ConfigFixture implements FixtureInterface, OrderedFixtureInterface, 
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/configs.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/config.yaml';
     }
 
     /**

@@ -19,7 +19,7 @@ final class TenantFixture implements FixtureInterface, OrderedFixtureInterface, 
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/system/tenants.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/system/tenant.yaml';
     }
 
     /**

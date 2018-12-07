@@ -19,7 +19,7 @@ final class AccessFixture implements FixtureInterface, OrderedFixtureInterface, 
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/access/*/accesses.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/access/*/access.yaml';
     }
 
     /**

@@ -19,7 +19,7 @@ final class PermissionFixture implements FixtureInterface, OrderedFixtureInterfa
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/access/*/permissions.yaml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/access/*/permission.yaml';
     }
 
     /**
