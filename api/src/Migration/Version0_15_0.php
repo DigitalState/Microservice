@@ -5,14 +5,14 @@ namespace App\Migration;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 use Doctrine\DBAL\Migrations\Version;
-use Ds\Component\Acl\Migrations\Version0_15_0 as Acl;
-use Ds\Component\Config\Migrations\Version0_15_0 as Config;
+use Ds\Component\Acl\Migration\Version0_15_0 as Acl;
+use Ds\Component\Config\Migration\Version0_15_0 as Config;
 use Ds\Component\Container\Attribute;
 use Ds\Component\Database\Util\Objects;
 use Ds\Component\Database\Util\Parameters;
-use Ds\Component\Metadata\Migrations\Version0_15_0 as Metadata;
-use Ds\Component\Parameter\Migrations\Version0_15_0 as Parameter;
-use Ds\Component\Tenant\Migrations\Version0_15_0 as Tenant;
+use Ds\Component\Metadata\Migration\Version0_15_0 as Metadata;
+use Ds\Component\Parameter\Migration\Version0_15_0 as Parameter;
+use Ds\Component\Tenant\Migration\Version0_15_0 as Tenant;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 /**
@@ -28,27 +28,27 @@ final class Version0_15_0 extends AbstractMigration implements ContainerAwareInt
     const DIRECTORY = '/srv/api/config/migrations';
 
     /**
-     * @var \Ds\Component\Acl\Migrations\Version0_15_0
+     * @var \Ds\Component\Acl\Migration\Version0_15_0
      */
     private $acl;
 
     /**
-     * @var \Ds\Component\Config\Migrations\Version0_15_0
+     * @var \Ds\Component\Config\Migration\Version0_15_0
      */
     private $config;
 
     /**
-     * @var \Ds\Component\Metadata\Migrations\Version0_15_0
+     * @var \Ds\Component\Metadata\Migration\Version0_15_0
      */
     private $metadata;
 
     /**
-     * @var \Ds\Component\Parameter\Migrations\Version0_15_0
+     * @var \Ds\Component\Parameter\Migration\Version0_15_0
      */
     private $parameter;
 
     /**
-     * @var \Ds\Component\Tenant\Migrations\Version0_15_0
+     * @var \Ds\Component\Tenant\Migration\Version0_15_0
      */
     private $tenant;
 
