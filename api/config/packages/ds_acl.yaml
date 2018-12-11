@@ -1,4 +1,3 @@
 ds_acl:
-  entities:
-    - App\Entity\Greeting
+  entities: []
   permissions: []
