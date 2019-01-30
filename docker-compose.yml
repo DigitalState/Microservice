@@ -1,0 +1,59 @@
+version: '3.4'
+
+services:
+  database:
+    image: postgres:9.6-alpine
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - database_data:/var/lib/postgresql/data:rw
+    networks:
+      default:
+        aliases:
+          - microservice_database
+
+  php:
+    image: digitalstate/microservice-php
+    build:
+      context: ./api
+      target: api_platform_php
+    depends_on:
+      - database
+    env_file:
+      - ./api/.env
+    environment:
+      APP_NAME: ${API_NAME}
+      APP_ENV: ${API_ENV}
+      APP_SECRET: ${API_SECRET}
+      APP_NAMESPACE: ${API_NAMESPACE}
+      TRUSTED_PROXIES: ${API_TRUSTED_PROXIES}
+      TRUSTED_HOSTS: ${API_TRUSTED_HOSTS}
+      DATABASE_URL: ${API_DATABASE_URL}
+      CORS_ALLOW_ORIGIN: ${API_CORS_ALLOW_ORIGIN}
+      JWT_PASS_PHRASE: ${API_JWT_PASS_PHRASE}
+      DISCOVERY_HOST: ${API_DISCOVERY_HOST}
+      DISCOVERY_CREDENTIAL: ${API_DISCOVERY_CREDENTIAL}
+      ENCRYPTION: ${API_ENCRYPTION}
+      SYSTEM_USERNAME: ${API_SYSTEM_USERNAME}
+      SYSTEM_PASSWORD: ${API_SYSTEM_PASSWORD}
+    networks:
+      default:
+        aliases:
+          - microservice_php
+
+  api:
+    image: digitalstate/microservice-api
+    build:
+      context: ./api
+      target: api_platform_nginx
+    depends_on:
+      - php
+    networks:
+      default:
+        aliases:
+          - microservice_api
+
+volumes:
+  database_data: {}
