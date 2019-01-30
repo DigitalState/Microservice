@@ -1,0 +1,19 @@
+parameters:
+  locale: en
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  App\:
+    resource: ../src/{Fixture}
+
+  App\Controller\:
+    resource: ../src/Controller
+    tags: [controller.service_arguments]
+
+  App\Fixture\:
+    resource: ../src/Fixture
+    tags: [doctrine.fixture.orm]

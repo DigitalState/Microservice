@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  database_ui:
+    image: adminer:4-standalone
+    networks:
+      default:
+        aliases:
+          - microservice_database_ui
+
+  php:
+    environment:
+      APP_ENV: dev
+    volumes:
+      - ${DIRECTORY}/api:/srv/api:rw,cached
+
+  api:
+    volumes:
+      - ${DIRECTORY}/api/public:/srv/api/public:ro
