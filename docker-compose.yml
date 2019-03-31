@@ -15,10 +15,7 @@ services:
           - microservice_database
 
   php:
-    image: digitalstate/microservice-php
-    build:
-      context: ./api
-      target: api_platform_php
+    image: digitalstate/microservice:php-0.16.0
     depends_on:
       - database
     env_file:
@@ -44,10 +41,7 @@ services:
           - microservice_php
 
   api:
-    image: digitalstate/microservice-api
-    build:
-      context: ./api
-      target: api_platform_nginx
+    image: digitalstate/microservice:api-0.16.0
     depends_on:
       - php
     networks:
