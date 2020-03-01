@@ -15,7 +15,7 @@ services:
           - microservice_database
 
   php:
-    image: digitalstate/microservice:php-0.17.3
+    image: digitalstate/microservice:php-0.18.0
     depends_on:
       - database
     env_file:
@@ -44,7 +44,7 @@ services:
           - microservice_php
 
   api:
-    image: digitalstate/microservice:api-0.17.3
+    image: digitalstate/microservice:api-0.18.0
     depends_on:
       - php
     networks:
