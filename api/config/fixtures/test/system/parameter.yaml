@@ -6,6 +6,15 @@ objects:
     value: system
 
   - key: ds_tenant.tenant.default
+    value: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+    
+  - key: ds_system.user.username
+    value: system
+
+  - key: ds_system.user.password
+    value: system
+
+  - key: ds_tenant.tenant.default
     value: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
 
 prototype:
