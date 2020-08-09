@@ -12,8 +12,8 @@ Feature: Validate acl permissions on metadata endpoints
     """
     {
       "type": "array",
-      "minItems": 6,
-      "maxItems": 6,
+      "minItems": 5,
+      "maxItems": 5,
       "items": {
         "type": "object",
         "properties": {
@@ -24,8 +24,7 @@ Feature: Validate acl permissions on metadata endpoints
               "e816d4d3-76a1-4082-b99c-39c3e81cbb83",
               "c95a4acb-259a-40cd-ac0b-a303e2d1c894",
               "a235421c-0502-4ff3-b152-9d58ba279f92",
-              "8df80b6e-5f45-4e87-bd75-5f62ee86d4b0",
-              "82f3e242-6d6f-4b22-bdee-bc8dcb698514"
+              "8df80b6e-5f45-4e87-bd75-5f62ee86d4b0"
             ]
           }
         }
@@ -99,8 +98,8 @@ Feature: Validate acl permissions on metadata endpoints
     """
     {
       "type": "array",
-      "minItems": 8,
-      "maxItems": 8,
+      "minItems": 7,
+      "maxItems": 7,
       "items": {
         "type": "object",
         "properties": {
@@ -112,7 +111,6 @@ Feature: Validate acl permissions on metadata endpoints
               "c95a4acb-259a-40cd-ac0b-a303e2d1c894",
               "a235421c-0502-4ff3-b152-9d58ba279f92",
               "8df80b6e-5f45-4e87-bd75-5f62ee86d4b0",
-              "82f3e242-6d6f-4b22-bdee-bc8dcb698514",
               "77954099-86df-47e5-9c05-57befd04efef",
               "99c0ccfd-ed42-41e0-bf1a-5230acd9a129"
             ]
@@ -284,8 +282,8 @@ Feature: Validate acl permissions on metadata endpoints
     }
     """
 
-  Scenario: Browse all metadata with permission scope `property data.attribute.subattribute = "string"`
-    Given I am authenticated as the "system@system.ds" user with identity role "30328696-956f-4f5c-bc65-f0312a5c7d63" from the tenant "64c82518-017d-4fb2-9fcf-3926da3616e6"
+  Scenario: Browse all metadata with permission scope `property data.attribute like "str"`
+    Given I am authenticated as the "system@system.ds" user with identity role "6134980b-d4c0-41b8-b874-ee4308717297" from the tenant "64c82518-017d-4fb2-9fcf-3926da3616e6"
     When I add "Accept" header equal to "application/json"
     And I send a "GET" request to "/metadata"
     Then the response status code should be 200
@@ -303,7 +301,7 @@ Feature: Validate acl permissions on metadata endpoints
           "uuid": {
             "type": "string",
             "enum": [
-              "82f3e242-6d6f-4b22-bdee-bc8dcb698514"
+              "e816d4d3-76a1-4082-b99c-39c3e81cbb83"
             ]
           }
         }

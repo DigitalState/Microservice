@@ -22,7 +22,7 @@ Feature: Add accesses
     And the header "Content-Type" should be equal to "application/json; charset=utf-8"
     And the response should be in JSON
     And the JSON node "id" should exist
-    And the JSON node "id" should be equal to the number 30
+    And the JSON node "id" should be equal to the number 31
     And the JSON node "uuid" should exist
     And the JSON node "createdAt" should exist
     And the JSON node "updatedAt" should exist
@@ -39,7 +39,7 @@ Feature: Add accesses
 
   Scenario: Read the added access
     When I add "Accept" header equal to "application/json"
-    And I send a "GET" request to "/accesses?id=30"
+    And I send a "GET" request to "/accesses?id=31"
     Then the response status code should be 200
     And the header "Content-Type" should be equal to "application/json; charset=utf-8"
     And the response should be in JSON

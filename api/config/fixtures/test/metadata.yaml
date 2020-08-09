@@ -93,18 +93,18 @@ objects:
       attribute: []
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
-  - uuid: 82f3e242-6d6f-4b22-bdee-bc8dcb698514
-    owner: BusinessUnit
-    owner_uuid: ~
-    title:
-      en: Metadata 6
-      fr: Metadata 6
-    slug: metadata-6
-    type: metadata
-    data:
-      attribute:
-        subattribute: "string"
-    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+#  - uuid: 82f3e242-6d6f-4b22-bdee-bc8dcb698514
+#    owner: BusinessUnit
+#    owner_uuid: ~
+#    title:
+#      en: Metadata 6
+#      fr: Metadata 6
+#    slug: metadata-6
+#    type: metadata
+#    data:
+#      attribute:
+#        subattribute: "string"
+#    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
   - uuid: 77954099-86df-47e5-9c05-57befd04efef
     owner: Service

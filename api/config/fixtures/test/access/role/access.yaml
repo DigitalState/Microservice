@@ -43,6 +43,10 @@ objects:
     assignee_uuid: 30328696-956f-4f5c-bc65-f0312a5c7d63
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
+  - uuid: cb12c8d6-81d3-46db-b687-21de7d92d2f0
+    assignee_uuid: 6134980b-d4c0-41b8-b874-ee4308717297
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
 prototype:
   uuid: ~
   owner: BusinessUnit
