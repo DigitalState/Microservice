@@ -1,4 +1,189 @@
-objects: []
+objects:
+  - access: f0897a2e-ed25-4937-bb50-f35e7c6ca520
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: owner
+      entity: BusinessUnit
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: f0897a2e-ed25-4937-bb50-f35e7c6ca520
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: owner
+      entity: BusinessUnit
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: e4ce3338-9ac8-480a-8eb9-ac1442ec654b
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: owner
+      entity: Service
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: e4ce3338-9ac8-480a-8eb9-ac1442ec654b
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: owner
+      entity: Service
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: d0339d5c-fea7-4ea8-b002-8a84fa57e3e9
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: owner
+      entity: Service
+      entity_uuid: 80078917-9650-4760-aa2c-9aa08a685dc3
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: d0339d5c-fea7-4ea8-b002-8a84fa57e3e9
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: owner
+      entity: Service
+      entity_uuid: 80078917-9650-4760-aa2c-9aa08a685dc3
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: fca3ff59-ae91-48d4-b189-31d27093d405
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: generic
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: fca3ff59-ae91-48d4-b189-31d27093d405
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: generic
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: ea6ab451-6999-43c7-8f87-731dcdac72dd
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: property
+      property: uuid
+      value: 6211c7bd-a680-40ff-89e0-4c98aba229db
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: ea6ab451-6999-43c7-8f87-731dcdac72dd
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: 617e0602-40ea-4f94-b208-5ce1997c691f
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: property
+      property: title.en
+      value: Metadata 1
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: 617e0602-40ea-4f94-b208-5ce1997c691f
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: property
+      property: title.en
+      value: Metadata 1
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: 33a83ffe-1879-49f1-86b4-64c97d178dfe
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: property
+      property: data.attribute
+      value: true
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: 33a83ffe-1879-49f1-86b4-64c97d178dfe
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: property
+      property: data.attribute
+      value: true
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: 77b4306e-feb7-4f4d-9fa6-de1bfd073eed
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: property
+      property: data.attribute
+      value: string
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: 77b4306e-feb7-4f4d-9fa6-de1bfd073eed
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: property
+      property: data.attribute
+      value: string
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: b88188c1-5014-4e97-b321-757d0ffd0f24
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: property
+      property: data.attribute
+      value: 123
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: b88188c1-5014-4e97-b321-757d0ffd0f24
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: property
+      property: data.attribute
+      value: 123
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: ed65bd97-1170-4f7e-b1dc-1307ac70e555
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: property
+      property: data.attribute
+      value: 4.56
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: ed65bd97-1170-4f7e-b1dc-1307ac70e555
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: property
+      property: data.attribute
+      value: 4.56
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: 1a9a98f2-4d88-45ca-8b55-18e6e8915252
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+    scope:
+      type: property
+      property: data.attribute.subattribute
+      value: string
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - access: 1a9a98f2-4d88-45ca-8b55-18e6e8915252
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+    scope:
+      type: property
+      property: data.attribute.subattribute
+      value: string
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
 prototype:
   access: ~

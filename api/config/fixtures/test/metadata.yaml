@@ -37,73 +37,93 @@ objects:
     owner: BusinessUnit
     owner_uuid: ~
     title:
-        en: Metadata 1
-        fr: Metadata 1
+      en: Metadata 1
+      fr: Metadata 1
     slug: metadata-1
     type: metadata
     data:
-        attribute: true
+      attribute: true
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
   - uuid: e816d4d3-76a1-4082-b99c-39c3e81cbb83
     owner: BusinessUnit
     owner_uuid: ~
     title:
-        en: Metadata 2
-        fr: Metadata 2
+      en: Metadata 2
+      fr: Metadata 2
     slug: metadata-2
     type: metadata
     data:
-        attribute: "string"
+      attribute: "string"
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
   - uuid: c95a4acb-259a-40cd-ac0b-a303e2d1c894
     owner: BusinessUnit
     owner_uuid: ~
     title:
-        en: Metadata 3
-        fr: Metadata 3
+      en: Metadata 3
+      fr: Metadata 3
     slug: metadata-3
     type: metadata
     data:
-        attribute: 123
+      attribute: 123
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
   - uuid: a235421c-0502-4ff3-b152-9d58ba279f92
     owner: BusinessUnit
     owner_uuid: ~
     title:
-        en: Metadata 4
-        fr: Metadata 4
+      en: Metadata 4
+      fr: Metadata 4
     slug: metadata-4
     type: metadata
     data:
-        attribute: 1.23
+      attribute: 4.56
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
   - uuid: 8df80b6e-5f45-4e87-bd75-5f62ee86d4b0
     owner: BusinessUnit
     owner_uuid: ~
     title:
-        en: Metadata 5
-        fr: Metadata 5
+      en: Metadata 5
+      fr: Metadata 5
     slug: metadata-5
     type: metadata
     data:
-        attribute: []
+      attribute: []
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
   - uuid: 82f3e242-6d6f-4b22-bdee-bc8dcb698514
     owner: BusinessUnit
     owner_uuid: ~
     title:
-        en: Metadata 6
-        fr: Metadata 6
+      en: Metadata 6
+      fr: Metadata 6
     slug: metadata-6
     type: metadata
     data:
-        attribute:
-            subattribute: "string"
+      attribute:
+        subattribute: "string"
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: 77954099-86df-47e5-9c05-57befd04efef
+    owner: Service
+    owner_uuid: ~
+    title:
+      en: Metadata 7
+      fr: Metadata 7
+    slug: metadata-7
+    type: metadata
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: 99c0ccfd-ed42-41e0-bf1a-5230acd9a129
+    owner: Service
+    owner_uuid: 80078917-9650-4760-aa2c-9aa08a685dc3
+    title:
+      en: Metadata 8
+      fr: Metadata 8
+    slug: metadata-8
+    type: metadata
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
 prototype:

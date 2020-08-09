@@ -23,6 +23,26 @@ objects:
     assignee_uuid: 37a96b86-1610-492c-86b1-a57a2504d562
     tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
+  - uuid: 33a83ffe-1879-49f1-86b4-64c97d178dfe
+    assignee_uuid: 7f4a80e0-8720-40af-b424-f4c827c17987
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: 77b4306e-feb7-4f4d-9fa6-de1bfd073eed
+    assignee_uuid: 72e33a99-d9c1-41d3-b2b6-c360ba03b016
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: b88188c1-5014-4e97-b321-757d0ffd0f24
+    assignee_uuid: e37f9cea-2f85-46e8-ad02-96bc0f4ce24a
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: ed65bd97-1170-4f7e-b1dc-1307ac70e555
+    assignee_uuid: fd71f9c1-45d0-4108-b1ec-fba860ad5808
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: 1a9a98f2-4d88-45ca-8b55-18e6e8915252
+    assignee_uuid: 30328696-956f-4f5c-bc65-f0312a5c7d63
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
 prototype:
   uuid: ~
   owner: BusinessUnit
