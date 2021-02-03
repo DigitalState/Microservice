@@ -1,7 +1,55 @@
-objects: []
+objects:
+  - uuid: f0897a2e-ed25-4937-bb50-f35e7c6ca520
+    assignee_uuid: df0d6e00-3582-4ccc-92f8-0425ba35bb0a
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: e4ce3338-9ac8-480a-8eb9-ac1442ec654b
+    assignee_uuid: 359e49d3-2fd0-4a68-b5e2-99b74cd6a34c
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: d0339d5c-fea7-4ea8-b002-8a84fa57e3e9
+    assignee_uuid: 9c8cb648-b6fe-4730-8d5d-d8ad0cbe9072
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: fca3ff59-ae91-48d4-b189-31d27093d405
+    assignee_uuid: fd8a9110-f41e-46e9-8109-31db9e187f71
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: ea6ab451-6999-43c7-8f87-731dcdac72dd
+    assignee_uuid: c57e3d26-792b-492f-8095-b96bc83c8ba5
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: 617e0602-40ea-4f94-b208-5ce1997c691f
+    assignee_uuid: 37a96b86-1610-492c-86b1-a57a2504d562
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: 33a83ffe-1879-49f1-86b4-64c97d178dfe
+    assignee_uuid: 7f4a80e0-8720-40af-b424-f4c827c17987
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: 77b4306e-feb7-4f4d-9fa6-de1bfd073eed
+    assignee_uuid: 72e33a99-d9c1-41d3-b2b6-c360ba03b016
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: b88188c1-5014-4e97-b321-757d0ffd0f24
+    assignee_uuid: e37f9cea-2f85-46e8-ad02-96bc0f4ce24a
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: ed65bd97-1170-4f7e-b1dc-1307ac70e555
+    assignee_uuid: fd71f9c1-45d0-4108-b1ec-fba860ad5808
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: 1a9a98f2-4d88-45ca-8b55-18e6e8915252
+    assignee_uuid: 30328696-956f-4f5c-bc65-f0312a5c7d63
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
+
+  - uuid: cb12c8d6-81d3-46db-b687-21de7d92d2f0
+    assignee_uuid: 6134980b-d4c0-41b8-b874-ee4308717297
+    tenant: 64c82518-017d-4fb2-9fcf-3926da3616e6 # Tenant 0
 
 prototype:
   uuid: ~
+  created_at: ~
   owner: BusinessUnit
   owner_uuid: ~
   assignee: Role
